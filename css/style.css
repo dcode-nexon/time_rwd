@@ -60,8 +60,9 @@ main header #sns li i {
 main article {
   width: 40vw;
   position: absolute;
-  top: 40vh;
+  top: 50%;
   left: 5vw;
+  transform: translateY(-50%);
 }
 main article p {
   font: 4vw/1 "orbitron";
@@ -80,8 +81,9 @@ main figure {
   width: 1200px;
   height: 800px;
   position: absolute;
-  right: -5vw;
-  bottom: -5vh;
+  right: -50px;
+  top: 50%;
+  transform: translateY(-30%);
   background-position: right top;
   background-repeat: no-repeat;
   background-size: contain;
@@ -109,6 +111,35 @@ main figure .screen .cl2 {
   position: absolute;
   top: 20px;
   left: 0px;
+}
+main nav {
+  width: 90vw;
+  height: 35px;
+  position: absolute;
+  left: 5vw;
+  bottom: 7vh;
+  display: flex;
+  justify-content: space-between;
+}
+main nav a {
+  width: 23%;
+  height: 100%;
+  background: rgba(255, 255, 255, 0.3);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font: 12px/1 "orbitron";
+  color: #fff;
+  letter-spacing: 2px;
+  border: 1px solid #bbb;
+  opacity: 0.7;
+  transition: 0.5s;
+}
+main nav a.on {
+  background: rgba(255, 255, 255, 0.8);
+  border: 1px solid #fff;
+  color: #000;
+  opacity: 1;
 }
 
 /*# sourceMappingURL=style.css.map */

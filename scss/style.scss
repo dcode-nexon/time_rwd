@@ -56,8 +56,9 @@ main {
   article {
     width: 40vw;
     position: absolute;
-    top: 40vh;
+    top: 50%;
     left: 5vw;
+    transform: translateY(-50%);
 
     p {
       font: 4vw/1 "orbitron";
@@ -82,8 +83,9 @@ main {
     width: 1200px;
     height: 800px;
     position: absolute;
-    right: -5vw;
-    bottom: -5vh;
+    right: -50px;
+    top: 50%;
+    transform: translateY(-30%);
     background-position: right top;
     background-repeat: no-repeat;
     background-size: contain;
@@ -115,6 +117,38 @@ main {
       }      
     }
 
+  }
+
+  nav {
+    width: 90vw;
+    height: 35px;
+    position: absolute;
+    left: 5vw;
+    bottom: 7vh;
+    display: flex;
+    justify-content: space-between;
+
+    a {
+      width: 23%; 
+      height: 100%;
+      background: rgba(255,255,255,.3);
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      font: 12px/1 "orbitron";
+      color: #fff;
+      letter-spacing: 2px;
+      border: 1px solid #bbb;
+      opacity: 0.7;
+      transition: 0.5s;
+
+      &.on {
+        background: rgba(255,255,255,.8);
+        border: 1px solid #fff;
+        color: #000;
+        opacity: 1;
+      }
+    }
   }
   
 
