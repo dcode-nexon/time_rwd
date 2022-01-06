@@ -10,10 +10,10 @@ setInterval(()=>{
 	hr = now.getHours();	
 
 	const data = [
-		{condition: hr>=5 && hr<11, name: "moninig"},
+		{condition: hr>=5 && hr<11, name: "morning"},
 		{condition: hr>=11 && hr<16, name: "afternoon"},
 		{condition: hr>=16 && hr<19, name: "evening"},
-		{condition: hr>=19, name: "night"}
+		{condition: hr>=19 || hr<5, name: "night"}
 	]
 
 	data.forEach((item,index)=>{
@@ -24,6 +24,12 @@ setInterval(()=>{
 			btns[index].classList.add("on");
 		}
 	})
+
+	if(main.classList.contains("afternoon")){
+		main.classList.add('dark_text');
+	}else{
+		main.classList.remove("dark_text");
+	}
 	/*
 	if(hr>=5 && hr<11 ){
 		main.className='';
