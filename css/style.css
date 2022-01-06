@@ -22,7 +22,30 @@ main {
   background-repeat: no-repeat;
   background-position: center;
   background-size: cover;
+}
+main.morning {
   background-image: url(../img/bg_morning.jpg);
+}
+main.morning figure {
+  background-image: url(../img/phone_morning.png);
+}
+main.afternoon {
+  background-image: url(../img/bg_afternoong.jpg);
+}
+main.afternoon figure {
+  background-image: url(../img/phone_afternoon.png);
+}
+main.evening {
+  background-image: url(../img/bg_evening.jpg);
+}
+main.evening figure {
+  background-image: url(../img/phone_evening.png);
+}
+main.night {
+  background-image: url(../img/bg_night.jpg);
+}
+main.night figure {
+  background-image: url(../img/phone_night.png);
 }
 main .sky_cl1 {
   position: absolute;
@@ -154,7 +177,7 @@ main nav {
   display: flex;
   justify-content: space-between;
 }
-main nav a {
+main nav span {
   width: 23%;
   height: 100%;
   background: rgba(255, 255, 255, 0.3);
@@ -168,7 +191,7 @@ main nav a {
   opacity: 0.7;
   transition: 0.5s;
 }
-main nav a.on {
+main nav span.on {
   background: rgba(255, 255, 255, 0.8);
   border: 1px solid #fff;
   color: #000;
