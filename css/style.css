@@ -114,6 +114,10 @@ main figure .screen {
   text-align: center;
   overflow: hidden;
 }
+main figure .screen span {
+  display: inline-block;
+  width: 100px;
+}
 main figure .screen .cl1 {
   width: 600px;
   position: absolute;

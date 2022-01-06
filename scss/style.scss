@@ -115,6 +115,12 @@ main {
       text-align: center;
       overflow: hidden;
 
+      //각 시간이 들어갈 최소 넓이값을 지정
+      span {
+        display: inline-block;
+        width: 100px;
+      }
+
       .cl1 {
         width: 600px; 
         position: absolute;
