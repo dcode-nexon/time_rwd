@@ -13,6 +13,19 @@ main {
   background-size: cover;
   background-image: url(../img/bg_morning.jpg);
 
+  .sky_cl1 {
+    position: absolute;
+    top: -100px; left: 50%;
+    opacity: 0;
+    animation: ani 40s linear 20s infinite; 
+  }
+  .sky_cl2 {
+    position: absolute;
+    top: -50px; left: 50%;
+    opacity: 0;
+    animation: ani 40s linear infinite;
+  }
+
   header {
     width: 90vw;
     position: absolute;
@@ -105,15 +118,19 @@ main {
       .cl1 {
         width: 600px; 
         position: absolute;
-        top: 30px;
-        left: -600px;
+        top: 0%;
+        left: 0%;
+        opacity: 0;
+        animation: ani 40s linear 20s infinite; 
       }
 
       .cl2 {
         width: 700px; 
         position: absolute;
-        top: 20px;
-        left: 0px;
+        top: 5%;
+        left: 0%;
+        opacity: 0;
+        animation: ani 40s linear infinite;
       }      
     }
 
@@ -150,7 +167,12 @@ main {
       }
     }
   }
-  
+}
 
-  
+@keyframes ani {
+  0% {left: -50%; opacity: 0;}
+  5% {opacity: 0.5}
+  95% {opacity: 0.5;}
+  100% {left: 80%; opacity: 0;}
+
 }
