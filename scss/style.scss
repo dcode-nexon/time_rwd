@@ -115,6 +115,19 @@ main {
       text-align: center;
       overflow: hidden;
 
+     em {
+       position: absolute; 
+       top: 100px;
+       left: 80px;
+       line-height: 1;
+       font-size: 20px;
+       opacity: 0;
+
+       &.on {
+         opacity: 1;
+       }
+     }
+
       //각 시간이 들어갈 최소 넓이값을 지정
       span {
         display: inline-block;
